@@ -65,6 +65,9 @@ body{
 .bannerimg9 img{
     box-shadow: #564337 0px 5px 55px, #2C1D16 0px -12px 30px, #030303 0px 4px 6px, #564337 0px 12px 13px, #2C1D16 0px -3px 5px;
 }
+.bannerimg10 img{
+    box-shadow: #E95F3B 0px 5px 55px, #ffffff 0px -12px 30px, #FFFFFF 0px 4px 6px, #F75339 0px 12px 13px, #2C1D16 0px -3px 5px;
+}
 .top{
     width: 100%;
     height: 100vh;

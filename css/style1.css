@@ -270,7 +270,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+#im{
+    text-transform: lowercase;
+}
 .dtv .card h1 {
     font-size: 2vw;
 }

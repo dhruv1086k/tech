@@ -303,12 +303,7 @@ body {
 @media only screen and (max-width:750px) {
     .card {
         width: 90%;
-        padding-top: 10%;
     }
-}
-
-@media only screen and (max-width:679px) {
-    
 }
 
 @media only screen and (max-width:500px) {

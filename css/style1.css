@@ -49,24 +49,35 @@ body {
     background: #211951;
 }
 
-.homeBtnCont {
+.homeBtnCont{
+    /* border: 1px solid red; */
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     position: absolute;
-    top: 0;
-    left: 0;
     z-index: 99999;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 1%;
 }
-
-.homeBtnCont a {
-    color: #FDA403;
+.homeBtnCont .innerhome{
+    width: 50px;
+    height: 50px;
     background-color: #fff;
-    padding: 0.5% 2%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #FDA403;
+}
+.homeBtnCont .innerhome a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none;
-    position: relative;
-    top: 2%;
-    left: 1%;
-    border-radius: 5px;
+}
+.homeBtnCont .innerhome i{
+    font-size: 1.5rem;
+    color: #FDA403;
 }
 
 .bannerimg {
@@ -290,15 +301,12 @@ body {
 @media only screen and (max-width:750px) {
     .card {
         width: 90%;
+        padding-top: 10%;
     }
 }
 
 @media only screen and (max-width:679px) {
-    .homeBtnCont a {
-        position: relative;
-        bottom: 2%;
-        right: 1%;
-    }
+    
 }
 
 @media only screen and (max-width:500px) {

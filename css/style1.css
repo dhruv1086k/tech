@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Anta", sans-serif;
 }
+
 html {
     min-height: 100vh;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
 }
+
 .video-container {
     position: fixed;
     top: 0;
@@ -20,55 +24,105 @@ body{
     height: 100%;
     overflow: hidden;
     z-index: -1;
-  }
-  
-  .video {
+}
+
+.video {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.bannerimg{
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #222831;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #080197;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #211951;
+}
+
+.homeBtnCont {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+
+.homeBtnCont a {
+    color: #FDA403;
+    background-color: #fff;
+    padding: 0.5% 2%;
+    text-decoration: none;
+    position: relative;
+    top: 2%;
+    left: 1%;
+    border-radius: 5px;
+}
+
+.bannerimg {
     width: 100%;
     height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.bannerimg img{
+
+.bannerimg img {
     height: 90%;
     border-radius: 10px;
 }
-.bannerimg1 img{
+
+.bannerimg1 img {
     box-shadow: #B86B37 0px 5px 55px, #C0B5B1 0px -12px 30px, #3E3128 0px 4px 6px, #483A31 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.bannerimg2 img{
+
+.bannerimg2 img {
     box-shadow: #621276 0px 5px 55px, #F7D362 0px -12px 30px, #DEA160 0px 4px 6px, #454954 0px 12px 13px, #F7D362 0px -3px 5px;
 }
-.bannerimg3 img{
+
+.bannerimg3 img {
     box-shadow: #AB6DFE 0px 5px 55px, #9955E8 0px -12px 30px, #49D3EE 0px 4px 6px, #DF3FBB 0px 12px 13px, #8644E6 0px -3px 5px;
 }
-.bannerimg4 img{
+
+.bannerimg4 img {
     box-shadow: #564337 0px 5px 55px, #2C1D16 0px -12px 30px, #030303 0px 4px 6px, #564337 0px 12px 13px, #2C1D16 0px -3px 5px;
 }
-.bannerimg5 img{
+
+.bannerimg5 img {
     box-shadow: #267B95 0px 5px 55px, #5D4AE4 0px -12px 30px, #F166C9 0px 4px 6px, #687482 0px 12px 13px, #5D4AE4 0px -3px 5px;
 }
-.bannerimg6 img{
+
+.bannerimg6 img {
     box-shadow: #01131F 0px 5px 55px, #ECEBD7 0px -12px 30px, #226C85 0px 4px 6px, #F2C958 0px 12px 13px, #226C85 0px -3px 5px;
 }
-.bannerimg7 img{
+
+.bannerimg7 img {
     box-shadow: #7C320D 0px 5px 55px, #9BDBF5 0px -12px 30px, #962F58 0px 4px 6px, #FF6D42 0px 12px 13px, #9BDBF5 0px -3px 5px;
 }
-.bannerimg8 img{
+
+.bannerimg8 img {
     box-shadow: #564337 0px 5px 55px, #2C1D16 0px -12px 30px, #030303 0px 4px 6px, #564337 0px 12px 13px, #2C1D16 0px -3px 5px;
 }
-.bannerimg9 img{
+
+.bannerimg9 img {
     box-shadow: #564337 0px 5px 55px, #2C1D16 0px -12px 30px, #030303 0px 4px 6px, #564337 0px 12px 13px, #2C1D16 0px -3px 5px;
 }
-.bannerimg10 img{
+
+.bannerimg10 img {
     box-shadow: #E95F3B 0px 5px 55px, #ffffff 0px -12px 30px, #FFFFFF 0px 4px 6px, #F75339 0px 12px 13px, #2C1D16 0px -3px 5px;
 }
-.top{
+
+.top {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -76,7 +130,8 @@ body{
     align-items: start;
     padding: 2% 0;
 }
-.card{
+
+.card {
     z-index: 200;
     width: 80%;
     height: auto;
@@ -87,7 +142,8 @@ body{
     padding: 0 2%;
     margin-bottom: 2%;
 }
-.innercard{
+
+.innercard {
     background-color: #0708090f;
     padding: 2rem;
     width: 100%;
@@ -95,7 +151,8 @@ body{
     background: rgba(175, 175, 175, 0.208);
     backdrop-filter: blur(4px);
 }
-.card h1{
+
+.card h1 {
     margin: 2% 0;
     color: #FAA300;
     text-transform: uppercase;
@@ -103,21 +160,25 @@ body{
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.card p{
+
+.card p {
     font-size: 1rem;
     color: #fff;
     line-height: 2;
     margin-bottom: 2%;
 }
-.card button{
+
+.card button {
     background: transparent;
     outline: none;
     border: none;
 }
-.card button a:hover{
+
+.card button a:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.card button a{
+
+.card button a {
     text-decoration: none;
     color: #fff;
     padding: 1rem 2rem;
@@ -129,26 +190,30 @@ body{
     border: none;
     cursor: pointer;
 }
-.btnregis{
+
+.btnregis {
     width: 100%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.btnregis button{
+
+.btnregis button {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.btnregis1{
+
+.btnregis1 {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-content: center;
 }
-.btnregis1 button{
+
+.btnregis1 button {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -157,19 +222,23 @@ body{
     border-radius: 2rem;
     transition: all 0.3s;
 }
-.btnregis1 button:hover{
+
+.btnregis1 button:hover {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-.btnregis1 button a:hover{
+
+.btnregis1 button a:hover {
     box-shadow: none;
 }
-.btnregis1 button img{
+
+.btnregis1 button img {
     width: 3.5rem;
     border-radius: 50%;
     margin: 0 10px 0 20px;
 }
+
 /* dtv cards */
-.dtv{
+.dtv {
     /* border: 1px solid red; */
     width: 100%;
     height: auto;
@@ -178,7 +247,8 @@ body{
     align-items: center;
     column-gap: 2rem;
 }
-.dtv .card{
+
+.dtv .card {
     /* border: 1px solid red; */
     width: 70%;
     height: 90%;
@@ -189,56 +259,78 @@ body{
     justify-content: center;
     align-items: center;
 }
-.dtv .card h1{
+
+.dtv .card h1 {
     font-size: 2vw;
 }
-.dtv .card p{
+
+.dtv .card p {
     color: #240A34;
 }
+
 /* dtv cards */
-@media only screen and (max-width:1000px){
-    .dtv{
+@media only screen and (max-width:1000px) {
+    .dtv {
         flex-wrap: wrap;
     }
-    .dtv .card{
+
+    .dtv .card {
         width: 100%;
     }
-    .dtv .card h1{
+
+    .dtv .card h1 {
         font-size: 2rem;
     }
-    .btnregis1{
+
+    .btnregis1 {
         flex-direction: column;
     }
 }
-@media only screen and (max-width:750px){
-    .card{
+
+@media only screen and (max-width:750px) {
+    .card {
         width: 90%;
     }
 }
-@media only screen and (max-width:500px){
-    .card{
+
+@media only screen and (max-width:679px) {
+    .homeBtnCont a {
+        position: relative;
+        bottom: 2%;
+        right: 1%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .card {
         width: 100%;
         background-color: #22283150;
     }
-    .bannerimg img{
+
+    .bannerimg img {
         height: 80%;
     }
-    .card h1{
+
+    .card h1 {
         font-size: 2.5rem;
     }
-    .top{
+
+    .top {
         padding: 0;
     }
-    .innercard h1{
+
+    .innercard h1 {
         font-size: 2rem;
     }
 }
-@media only screen and (max-width:430px){
-    .card button a{
+
+@media only screen and (max-width:430px) {
+    .card button a {
         padding: 0.5rem 1rem;
         margin: 1rem 0;
     }
-    .btnregis1 button img{
+
+    .btnregis1 button img {
         margin: 0;
     }
 }
